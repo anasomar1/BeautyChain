@@ -1,0 +1,28 @@
+.about {
+  margin: 5rem 10%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    margin: 4rem 0 3rem 0;
+  }
+
+  .details {
+    margin-top: 3rem;
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    .details {
+      width: 100%;
+      height: 500px;
+      margin-top: 0rem;
+    }
+  }
+}

@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+.hamburger {
+  display: none;
+}
+.container {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 7rem;
+  margin-bottom: 2rem;
+  span {
+    color: orange;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+h1,
+h2 {
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.6rem;
+  color: rgb(46, 44, 44);
+  line-height: 1.8;
+}
+
+.btn {
+  color: white;
+  background: #3d8495;
+  border-radius: 20px;
+  padding: 1em 1.5em;
+}
+
+header {
+  background-color: #519dae;
+
+  nav {
+    display: flex;
+    width: 80%;
+    min-height: 10vh;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      color: white;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        padding-left: 5rem;
+        font-size: 1.6rem;
+
+        a {
+          color: white;
+
+          &:hover {
+            color: #f4a324;
+          }
+        }
+      }
+    }
+  }
+}
+i {
+  display: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  height: 90vh;
+  position: relative;
+  background: #e6f3f6;
+  .content {
+    grid-column: 2/3;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      margin-right: 2rem;
+    }
+
+    .btn {
+      font-size: 2rem;
+      display: block;
+      text-align: center;
+      width: 200px;
+
+      &:hover {
+        background: #396f7c;
+      }
+    }
+  }
+
+  img {
+    grid-column: 3/4;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-self: center;
+    justify-self: flex-start;
+  }
+}
+
+footer {
+  display: flex;
+  width: 100;
+  background: #6c63ff;
+  padding: 2rem 10%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3rem;
+  min-height: 10vh;
+  p {
+    color: white;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    color: white;
+    a {
+      display: block;
+    }
+
+    p {
+      color: white;
+      font-weight: bolder;
+    }
+    i {
+      padding-left: 50px;
+      color: white;
+
+      &:hover {
+        color: orange;
+      }
+    }
+  }
+}
+
+h2 {
+  i {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    h1 {
+      font-size: 6rem;
+    }
+    img {
+      margin-left: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .hero {
+    h1 {
+      font-size: 5rem;
+    }
+    img {
+      margin-left: 2rem;
+    }
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    .content {
+      grid-column: 2/4;
+      text-align: center;
+    }
+    h1 {
+      font-size: 6rem;
+    }
+    img {
+      display: none;
+    }
+    .btn {
+      align-self: center;
+    }
+  }
+  h2 {
+    i {
+      display: inline-block !important;
+      margin-left: 1rem;
+      color: #519dae;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  li {
+    display: none;
+  }
+  .list {
+    display: inline;
+  }
+  .visible {
+    display: flex;
+    z-index: 1;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    top: 10vh;
+    background-color: #4f98aa;
+    align-items: center;
+    justify-content: space-around;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger {
+    display: block;
+    font-size: 3.6rem;
+    color: white;
+
+    &:hover {
+      color: orange;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rights {
+    display: none;
+  }
+}
+@import "styles/products";
+@import "styles/qualities";
+@import "styles/about";
+@import "styles/contact";

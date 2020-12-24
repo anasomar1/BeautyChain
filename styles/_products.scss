@@ -1,0 +1,34 @@
+.cards {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8em;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.card {
+  margin-bottom: 3rem;
+  img {
+    width: 50%;
+    margin-bottom: 4rem;
+    box-shadow: 0px 0px 1.5px rgb(0, 0, 0);
+  }
+  h3 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
