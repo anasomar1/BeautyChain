@@ -373,7 +373,7 @@ h2 i {
   -ms-grid-columns: 10% 1fr 1fr 10%;
       grid-template-columns: 10% 1fr 1fr 10%;
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 
 .quality .content {
