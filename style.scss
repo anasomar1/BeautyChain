@@ -58,6 +58,11 @@ p {
 
 header {
   background-color: #519dae;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 
   nav {
     display: flex;
@@ -99,6 +104,7 @@ i {
   height: 90vh;
   position: relative;
   background: #e6f3f6;
+  margin-top: 10vh;
   .content {
     grid-column: 2/3;
     display: flex;

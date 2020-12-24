@@ -64,6 +64,11 @@ p {
 
 header {
   background-color: #519dae;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
 }
 
 header nav {
@@ -116,6 +121,7 @@ i {
   height: 90vh;
   position: relative;
   background: #e6f3f6;
+  margin-top: 10vh;
 }
 
 .hero .content {
@@ -450,7 +456,7 @@ h2 i {
 }
 
 .about {
-  margin: 5rem 10%;
+  margin: 15vh 10%;
   height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,7 +500,7 @@ form {
 
 .contact {
   width: 80%;
-  margin: 4rem auto;
+  margin: 15vh auto;
   -webkit-box-shadow: 0px 0px 20px #00000010;
           box-shadow: 0px 0px 20px #00000010;
   background-color: white;
